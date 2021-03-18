@@ -1,0 +1,863 @@
+/*aturan Font */
+
+@font-face {
+	font-family: fontsatu;
+	src: url(fonts/SansationLight.woff);
+}
+@font-face {
+	font-family: fontdua;
+	src: url(fonts/Inconsolata/Inconsolata-Regular.ttf);
+}
+
+body {
+	background: #f7f7f7;
+	margin: 0px;
+}
+
+.container {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*login */
+.loginput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.logbutton {
+    background-color: #800080;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.logbutton:hover {
+    opacity: 0.8;
+}
+.regis {
+    background-color: #800080;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 5px;
+}
+.regis:hover {
+	opacity: 0.8;
+}
+.logclear {
+	padding: 20px;
+	float: right;
+	margin-right: 10%;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container1 {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+    padding: 10px;
+}
+.koala {
+	width: 200px;
+	height: 200px;
+	background: black;
+	position: fixed;
+}
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+}
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #800080;
+    cursor: pointer;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/*filter */
+.filt {
+    width: 50px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    transition: width 1s;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: -10px;
+    padding-right: 10px;
+}
+.filt:hover {
+    width: 150px;
+}
+
+/*banner*/
+.parallax {
+    background: url("Background/1.4.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kolomisi {
+	color: white;
+	width: 40%;
+	height: auto;
+	margin-left: 10%;
+	margin-bottom: 2%;
+	position: absolute;
+	top: 170px;
+	padding: 10px;
+	left: 40%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px black;
+	font-family: fontsatu;
+}
+.glogo {
+	float: left;
+	width: 140px;
+	margin-left: 7%;
+	margin-right: 1%;
+	cursor: pointer;
+}
+
+.daftar {
+	background: #800080;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px 0px black;
+}
+.daftar:hover {
+	box-shadow: 3px 3px 20px 0px black;
+}
+
+/*navigasi*/
+nav {
+	z-index: 19;
+	position: sticky;
+	top: 0;
+	height: 57px;
+}
+nav ul {
+	background-color: white;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	float: right;
+	width: 100%;
+}
+nav li {
+	float: left;
+	cursor: pointer;
+}
+nav li a {
+	display: block;
+	font-size:20px;
+	color: rgba(0,0,0,0.5);
+	padding: 17px;
+	text-decoration: none;
+	border-bottom: 3px solid white;
+	font-family: fontdua;
+	font-weight: bold;
+}
+nav li a:hover {
+	color: #800080;
+}
+.active {
+	border-bottom: 3px solid black;
+}
+.sign {
+	color: gray;
+	background: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	/*margin-left: 10px;*/
+	margin-top: -50px;
+	float: left;
+	font-family: fontdua;
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 1100px;
+}
+.sign:hover {
+	color: #800080;
+}
+nav ul .icon {
+	display: none;
+}
+
+/*isi nya*/
+.caricontent {
+	background: white;
+	height:auto;
+	font-family: calibri;
+	clear: left;
+	padding: 16px;
+	margin:0 auto;  /*agar tampilan berada di tengah*/
+	margin-bottom: 10px;
+	overflow: auto;
+}
+.menu {
+	padding: 4px;
+	background: white;
+	width: 90%;
+	height: auto;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: -30px;
+	padding: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.barumenu {
+	padding: 4px;
+	background: white;
+	width: 90%;
+	height: auto;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.bagi2{/*halaman2.html*/
+	width: 48.3%;
+	float: left;
+	margin: 10px;
+	height: 500px;
+	border: 1px solid #e7e8eb;
+	border-radius: 5px;
+	overflow: scroll;
+}
+.rekomen {
+	font-family: arial;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 3%;
+	color: #800080;
+}
+
+.gridmenu {
+	width: 264px;
+	height: 340px;
+	padding: 6px;
+	float: left;
+	margin: 1%;
+	border: 1px solid #e7e8eb;
+	position: relative;
+	background: white;
+}
+.overlay {
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	overflow: hidden;
+  	width: 0;
+  	height: 100%;
+  	transition: .5s ease;
+  	display: block;
+}
+.gridmenu:hover {
+  	box-shadow: 3px 3px 20px 0px black;
+}
+.gridmenu:hover .overlay{
+ 	width: 100%;
+}
+.gridmenu img {
+	width: 100%;
+	height: 200px;
+}
+.barang {
+	width: 100%;
+	height: 200px;
+	clear: left;
+	z-index: 100;
+}
+.nama {
+	margin-top: 11px;
+    margin-bottom: 9px;
+    overflow: hidden;
+    height: auto;
+    text-align: left;
+    padding: 0 10px;
+    z-index: 10;
+    color: purple;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 15px;
+}
+.typenya {
+	background: #800080;
+	width: 80px;
+	color: white;
+	padding: 4px;
+	border-radius: 5px;
+	text-align: center;
+}
+.harga{
+	margin-left: 3%;
+	margin-top: 20px;
+	color: #800080;
+	font-size: 28px;
+	z-index: 10;
+}
+.box1 {
+	background: #800080;
+  	color: white;
+  	font-size: 20px;
+  	position: absolute;
+  	top: 15%;
+  	left: 25%;
+  	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  	white-space: nowrap;
+  	padding: 16px;
+  	cursor: pointer;
+  	text-align: left;
+}
+.box2 {
+	background: black;
+  	color: white;
+  	font-size: 20px;
+  	position: absolute;
+  	top: 35%;
+  	left: 20%;
+  	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  	white-space: nowrap;
+  	padding: 16px;
+  	cursor: pointer;
+  	text-align: left;
+}
+.hub a{
+	text-decoration: none;
+	border: 1px solid #e7e8eb;
+	width: 250px;
+	height: auto;
+	position: absolute;
+	bottom: 10px;
+	margin: auto;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+.hub a:hover {
+	background: #800080;
+	color: white;
+	font-weight: bold;
+}
+
+/*bantuan*/
+.carapake{
+	overflow: hidden;
+	padding: 25px;
+	background: white;
+	margin-top: 2%;
+	height: auto;
+}
+.gridmenu2 {
+	margin-top: 40px;
+	width: 265px;
+	height: 300px;
+	padding: 10px;
+	float: left;
+	margin: 20px;
+	border: 1px solid #e7e8eb;
+}
+.gridmenu2 img {
+	width: 100px;
+	margin-top: 10px;
+}
+.gridmenu2 p {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+/*Pasang Iklan*/
+.piklan {
+	margin-top: 1%;
+	height: auto;
+	padding: 30px;
+	color: black;
+	/*color: #28426b;*/
+	margin: auto;
+	text-align: center;
+	align-content: center;
+}
+.iklankost {
+	margin: 16px;
+	border-radius: 5px;
+	padding: 10px;
+	background: white;
+	border: 1px solid red;
+}
+.iklankost a{
+	color: black;
+	text-decoration: none;
+}
+
+/*filter*/
+#panel, #flip {
+    padding: 5px;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+}
+#flip {
+  text-align: center;
+	cursor: pointer;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: arial;
+	color: purple;
+}
+#flip:hover {
+	background: #800080;
+	color: white;
+}
+#panel {
+    padding: 5px;
+	height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.pgrid{
+	background:;
+	margin: 3px;
+	float: left;
+	width: 27%;
+	height: auto;
+	color: purple;
+}
+.pgrid select {
+	width: 140px;
+	padding: 5px;
+	border-radius: 5px;
+}
+.filtsub {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	float: left;
+	padding: 10px;
+	background: #800080;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+}
+.filtsub:hover {
+	box-shadow: 2px 2px 10px 1px gray;
+}
+
+/*grid deskripsi*/
+
+.desgrid {
+	float: left;
+	margin: 2px;
+	height: 500px;
+	width: 520px;
+}
+.desharga {
+	float: right;
+	margin: 2px;
+	height: auto;
+	width: 400px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+.ketkamar {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background: #800080;
+	padding: 10px;
+	text-align: center;
+}
+
+/*footer*/
+footer {
+	background: #202020;
+	padding-top: 2%;
+	height: auto;
+	padding-bottom: 2%;
+	overflow: hidden;
+}
+footer p{
+	font-size: 17px;
+	font-family: sans-serif;
+}
+footer a {
+	color: #d802d8;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #800080;
+	text-decoration: underline;
+}
+.contac {
+	margin: auto;
+	width: 380px;
+	color: #c2c3c4;
+}
+.bulcontainer {
+	width: 300px;
+	height: auto;
+	padding: 12px;
+	margin: auto;
+	overflow: hidden;
+}
+.bulet {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	background: white;
+	overflow: hidden;
+	float: left;
+	margin: 10px;
+	text-align: center;
+}
+.bulet img {
+	padding-top: 15px;
+	width: 40px;
+}
+.bulet:hover {
+	background: #D7D4D4;
+	cursor: pointer;
+}
+
+/*register */
+
+.badan {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.jarak  {
+    margin-top: 1%;
+    clear: left;
+}
+
+.badan input[type=text] , .badan input[type=password] {
+    background-color: white;
+    padding: 8px;
+}
+.labregis {
+    text-align: center;
+    font-size: 29px;
+    margin: 20px;
+}
+.regbutton {
+    background-color: #800080;
+    color: white;
+    padding: 10px 10px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float : left;
+}
+
+/*halaman 3*/
+
+.descrip {
+	margin-left: 20px;
+	font-size: 18px;
+
+}
+.gamgrid {
+	float: left;
+	width: 250px;
+
+}
+.gamgrid img {
+	width: 100%;
+	height: 200px;
+}
+.containerdetail {
+	height: auto;
+	width: 95%;
+	margin: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.detail{
+	float: left;
+}
+.fotonya {
+	width: 24%;
+	height: 300px;
+	background: white;
+	padding-bottom: 18px;
+}
+.fotonya img {
+	margin: 10px;
+	width: 90%;
+	height: 200px;
+}
+.deskripsinya {
+	width: 50%;
+	height: 300px;
+	background: white;
+	padding-top: 18px;
+	padding-right: 30px;
+}
+.pemiliknya {
+	width: 20%;
+	height: 300px;
+	margin: 10px;
+	font-family: arial;
+}
+.fontdetail {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: arial;
+	margin-top: 10px;
+}
+.fontharga {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: arial;
+	color: #ea1e40;
+}
+.pesan {
+  background-color: #800080;
+  color: white;
+  padding: 5px 200px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.pesan:hover {
+	opacity: 0.8;
+}
+.containerdetail ul {
+	background-color: #f7f4f4;
+	text-decoration: none;
+	z-index: 1;
+}
+.listrik {
+	background: #dce2ed;
+	padding: 10px;
+	border: 1px solid green;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.slideshow-container {
+  position: relative;
+  background: white;
+}
+.mySlides {
+  display: none;
+  padding: 10px;
+	margin: 15px;
+	margin-left: 60px;
+	margin-right: 50px;
+}
+.mySlides ul{
+	background: white;
+	margin-top: 3px;
+}
+.mySlides li {
+	text-decoration: none;
+}
+.dot {
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+	padding: 10px;
+	background: #f7f4f4;
+	border: 1px solid #e7e8eb;
+	font-size: 16px;
+	font-family: arial;
+	color: #959594;
+	font-weight: bold;
+	z-index: 1;
+}
+.active, .dot:hover {
+  background-color: white;
+	color: #fc0763;
+}
+
+/*komentar*/
+.comment {
+	margin:20px 0 0 20px;
+	border: 2px solid #848484;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	max-height: 90%;
+	font-weight: bold;
+	color: #606060;
+	padding: 10px;
+	width: 440px;
+	background-color: #dcdcdc;
+}
+.publishcomment {
+	border: 2px solid #848484;
+	box-shadow: 12px 12px 7px #888888;
+	margin: 30px 0 50px 20px;
+	padding: 10px;
+	max-height: 100%;
+	color: #3d3d3d;
+	width: 550px;
+	font-size: 12px;
+	line-height: 15px;
+}
+.publishcomment hr {
+	color: #ccc;
+}
+.publishcomment a {
+	color: #da5700;
+	text-decoration: none;
+	font-weight:normal;
+}
+.publishcomment a:link {
+	font-weight: bold;
+}
+.publishcomment a:hover {
+	text-decoration: underline;
+}
+
+/*pemilik kost*/
+
+.bd_pemilik {
+	width: 60%;
+	height: auto;
+	background: white;
+	box-shadow: 1px 1px 1px 1px grey;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 15px;
+	color: #800080;
+}
+.bd_pemilik:hover {
+	background: #d8d8d8;
+	cursor: pointer;
+}
+.bg_pemilik a{
+	text-decoration: none;
+	color: #800080;
+}
+.input {
+	border: none;
+	font-size: 30px;
+}
+.textdeskripsi {
+	border: 1px solid grey;
+	padding: 10px;
+	margin-top: 10px;
+	width: 100%;
+}
+.badan_pemilik {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
